@@ -1,0 +1,267 @@
+
+/*--  STYLES  
+Buttoms and lines: #FDB0BF;
+Borders: #DCDCDC;
+Color: #5B6269;
+*/
+
+/*-- GENERAL STYLES  */
+* {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+}
+img { 
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+section a:hover,
+button:hover {
+    background-color: #DB7093;
+
+}
+.main-nav li:last-child a {
+	color: white;
+}
+
+
+.wrap {
+    width: 90%;
+    background-color:  #eeeeee;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1em 0;
+}
+
+
+/*-- NAVIGATION STYLES  */
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    
+}  
+
+.main-nav li {
+    background:  #ececec;
+    border-radius: 4%;
+    margin-bottom: 8px !important;
+    padding: 5px 0;
+}
+.main-nav a{
+    display: block;
+}
+
+.main-nav li:last-child {
+    background-color: #FDB0BF;
+    
+}
+.logo > img {
+    padding-right: 8px;
+}
+
+/*-- SECTIONS  */
+section h1 {
+    font-size: 20px;
+}
+section img {
+    height: 100px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+section {
+    margin: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.adopt article:first-of-type,
+.buttoms {
+   display: flex;
+   flex: wrap;
+
+}
+.adopt article:first-of-type img {
+    max-width: 100%;
+    align-self: center;
+    margin-bottom: 30px;
+}
+.adopt h1,
+.locations h1,
+.contact h1 {
+    text-align: center;
+}
+.buttoms {
+    justify-content: center;
+}
+.buttoms >li {
+    margin: 10px 0 30px 15px;
+    background-color: #FDB0BF;
+    border-radius: 5px;
+ 
+    
+}
+.buttoms > li a {
+    color: #ffff;
+    display: block;
+    padding: 7px 15px;
+}
+.locations,
+.contact {
+    text-align: center;
+}
+.locations img {
+    height: 40%;
+    
+    padding: 15px 0;
+}
+.locations p {
+    font-weight: 700;
+}
+/* STYLE FORMS */
+form input,
+form textarea {
+    width: 75%;
+    height: 40px;
+    border: 1px solid #FDB0BF;
+    border-radius: 2%;
+    box-shadow: 1px 3px#DCDCDC;
+}
+
+.form-location {
+    position: relative;
+   
+}
+.form-location > img {
+    position: absolute;
+    width: 35px;
+    z-index: 2;
+    top: 0;
+    right: -20px;
+    padding-left: -15px;
+}
+
+.form > form input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+}
+.contact form input,
+.contact form textarea {
+    border: 1px solid #4682B4;
+}
+
+.contact > form input[type=text],
+.contact > form input[type=email],
+.contact > form textarea[type=text] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 12px;
+    
+}
+.contact > form textarea[type=text] {
+    height: 200px;
+}
+button {
+    display: block;
+    background-color: #FDB0BF;
+    color: #fff;
+    border: 1px solid #FDB0BF;
+    border-radius: 5%;
+    padding: 5px 20px;
+}
+.contact button {
+    margin-left: 13%;
+}
+form > h1 {
+    margin-bottom: 30px;
+}
+/*-- MEDIA QUERIES  */
+@media (min-width: 768px){
+    
+   .wrap{
+        width: 80%;
+   }
+   /*-- NAVIGATION  */
+   .container {
+       width: 95%;
+       text-align: left;
+       border-bottom: 1px solid #d9d9d9;
+      
+       
+   }
+   .logo,
+   .main-nav,
+   .main-nav li {
+      display: inline-block;
+      margin: 0 auto;
+   }
+ 
+  .logo {
+      margin-right: 5%;
+      margin-left: 2%;
+      float: left;
+  }
+  .main-nav {
+      
+      float: right;
+      
+  }
+  .main-nav li {
+    background-color: #eeeeee;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  }
+  .main-nav li:last-child {
+     margin-left: 40px;
+     padding: 8px;
+     border-radius: 40%;
+  }
+
+
+  /*-- MAIN SECTION  */
+  section h1{
+      font-size: 24px;
+  }
+  section img {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+ 
+  .about img {
+    float: left;
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: 250px;
+    
+  }
+  .about article {
+      float: right;
+      width: 55%;
+  }
+
+  .adopt > article:first-of-type {
+      text-align: center;
+  }
+  .contact {
+    width: 60%;
+    margin: 0 auto;
+}
+}
+
